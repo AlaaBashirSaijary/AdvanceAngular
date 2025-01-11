@@ -1,0 +1,9 @@
+<div
+*ngFor="let toast of toasts"
+class="toast"
+[ngClass]="toast.type"
+(click)="removeToast(toast)"
+>
+<strong>{{ toast.title }}</strong>
+<p>{{ toast.message }}</p>
+</div>

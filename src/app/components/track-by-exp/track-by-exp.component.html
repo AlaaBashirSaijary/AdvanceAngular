@@ -1,0 +1,17 @@
+<div>
+  <h3>Items List:</h3>
+  <ul>
+    <li *ngFor="let item of items; trackBy: trackById">
+      {{ item.id }} - {{ item.name }}
+    </li>
+  </ul>
+</div>
+<app-toastr-exp></app-toastr-exp>
+
+<!-- أزرار لتجربة أنواع الإشعارات المختلفة -->
+<div class="buttons">
+  <button (click)="showSuccess()">Show Success</button>
+  <button (click)="showError()">Show Error</button>
+  <button (click)="showInfo()">Show Info</button>
+  <button (click)="showWarning()">Show Warning</button>
+</div>

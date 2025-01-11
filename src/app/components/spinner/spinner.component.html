@@ -1,0 +1,9 @@
+<div class="content">
+  <h1>Loading Spinner Example</h1>
+  <button (click)="toggleSpinner()">Toggle Spinner</button>
+
+  <!-- Spinner: يظهر عندما تكون isLoading = true -->
+  <div *ngIf="isLoading" class="spinner-container">
+    <div class="spinner"></div>
+  </div>
+</div>
