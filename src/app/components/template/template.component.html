@@ -1,0 +1,9 @@
+<button (click)="showTemplate = !showTemplate">عرض التأكيد</button>
+
+<ng-template #confirmation>
+  <p>هل تريد الاستمرار؟</p>
+</ng-template>
+
+<div *ngIf="showTemplate">
+  <ng-container *ngTemplateOutlet="confirmation"></ng-container>
+</div>

@@ -1,0 +1,29 @@
+<div class="form-container">
+    <h2>نموذج التحقق</h2>
+    
+    <form [formGroup]="form" (ngSubmit)="onSubmit()">
+      <!-- حقل الاسم -->
+      <div class="form-group">
+        <label for="name">الاسم:</label>
+        <input id="name" formControlName="name" type="text" placeholder="أدخل اسمك">
+        <div *ngIf="name?.touched && name?.invalid" class="error-message">
+          <div *ngIf="name?.hasError('required')">الاسم مطلوب.</div>
+          <div *ngIf="name?.hasError('minlength')">الاسم يجب أن يكون على الأقل 3 أحرف.</div>
+        </div>
+      </div>
+      
+      <!-- حقل البريد الإلكتروني -->
+      <div class="form-group">
+        <label for="email">البريد الإلكتروني:</label>
+        <input id="email" formControlName="email" type="email" placeholder="أدخل بريدك الإلكتروني">
+        <div *ngIf="email?.touched && email?.invalid" class="error-message">
+          <div *ngIf="email?.hasError('required')">البريد الإلكتروني مطلوب.</div>
+          <div *ngIf="email?.hasError('email')">البريد الإلكتروني غير صالح.</div>
+          <div *ngIf="email?.hasError('emailInvalid')">البريد الإلكتروني يجب أن ينتهي بgmail.com</div>
+        </div>
+      </div>
+  
+      <button type="submit" [disabled]="form.invalid">إرسال</button>
+    </form>
+  </div>
+  

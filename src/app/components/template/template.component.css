@@ -1,0 +1,42 @@
+/* تنسيق الزر */
+button {
+  background-color: rgb(0, 123, 255); /* لون أزرق مميز */
+  color: white; /* لون النص */
+  border: none; /* إزالة الحواف */
+  border-radius: 25px; /* حواف مستديرة */
+  padding: 10px 20px; /* مساحة داخلية */
+  font-size: 16px; /* حجم النص */
+  font-weight: bold; /* جعل النص عريض */
+  cursor: pointer; /* مؤشر اليد عند التمرير */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* ظل الزر */
+  transition: all 0.3s ease; /* تأثيرات لطيفة عند التغيير */
+}
+
+button:hover {
+  background-color: rgb(0, 100, 204); /* لون أغمق عند التمرير */
+  transform: scale(1.05); /* تكبير الزر قليلاً */
+}
+
+button:active {
+  transform: scale(0.95); /* تصغير الزر قليلاً */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* تقليل الظل */
+}
+
+/* تنسيق صندوق التأكيد */
+div {
+  margin-top: 20px; /* مسافة أعلى الزر */
+  background-color: #f8f9fa; /* لون الخلفية الرمادية الفاتحة */
+  padding: 15px; /* مساحة داخلية */
+  border-radius: 10px; /* حواف مستديرة */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* إضافة ظل */
+  text-align: center; /* محاذاة النص إلى المنتصف */
+  font-size: 18px; /* حجم النص */
+  font-family: Arial, sans-serif; /* نوع الخط */
+  color: #333; /* لون النص */
+  transition: opacity 0.3s ease; /* تأثير ظهور سلس */
+}
+
+p {
+  margin: 0; /* إزالة الهوامش */
+  font-weight: bold; /* جعل النص عريض */
+}

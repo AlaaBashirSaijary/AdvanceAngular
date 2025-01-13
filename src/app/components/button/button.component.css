@@ -1,0 +1,26 @@
+.customButton {
+  background-color: rgb(153, 5, 128); /* اللون الأساسي للزر */
+  color: white; /* لون النص */
+  border: none; /* إزالة الحواف */
+  border-radius: 50px; /* جعل الحواف مستديرة */
+  width: 180px; /* عرض الزر */
+  height: 80px; /* ارتفاع الزر */
+  font-size: 15px; /* حجم النص داخل الزر */
+  font-weight: bold; /* جعل النص عريض */
+  text-align: center; /* محاذاة النص إلى المنتصف */
+  cursor: pointer; /* إظهار مؤشر اليد عند التمرير فوق الزر */
+  transition: all 0.3s ease; /* تأثير لطيف عند التغيير */
+}
+
+/* التأثير عند التمرير فوق الزر */
+.customButton:hover {
+  background-color: rgb(128, 0, 105); /* لون أغمق عند التمرير */
+  transform: scale(1.05); /* تكبير الزر قليلاً */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* إضافة ظل */
+}
+
+/* التأثير عند الضغط على الزر */
+.customButton:active {
+  transform: scale(0.95); /* تصغير الزر قليلاً */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2); /* تقليل الظل */
+}

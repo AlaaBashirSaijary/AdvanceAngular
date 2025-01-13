@@ -1,0 +1,29 @@
+/* تخصيص تنسيق الرابط الآمن */
+.safe-link {
+  text-decoration: none;
+  color: green;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #e0f7fa;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.safe-link:hover {
+  background-color: #b2ebf2;
+}
+
+/* تخصيص تنسيق الرابط غير الآمن */
+.unsafe-link {
+  text-decoration: none;
+  color: red;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #ffebee;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.unsafe-link:hover {
+  background-color: #ffccd4;
+}

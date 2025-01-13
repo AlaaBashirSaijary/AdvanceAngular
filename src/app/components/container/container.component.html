@@ -1,0 +1,9 @@
+<ng-container *ngIf="items.length > 0; else noItems">
+  <ul>
+    <li *ngFor="let item of items">{{ item }}</li>
+  </ul>
+</ng-container>
+
+<ng-template #noItems>
+  <p>لا توجد عناصر لعرضها</p>
+</ng-template>

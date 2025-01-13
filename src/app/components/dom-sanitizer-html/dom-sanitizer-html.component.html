@@ -1,0 +1,13 @@
+<div class="container">
+  <h3>حقل غير آمن</h3>
+  <input [(ngModel)]="unsafeInput" placeholder="أدخل نصاً" />
+  
+  <!-- عرض النص غير الآمن -->
+  <div [innerHTML]="unsafeInput" class="unsafe"></div>
+
+  <h3>حقل آمن</h3>
+  <input [(ngModel)]="userInput" placeholder="أدخل نصاً" (input)="updateSafeContent()" />
+  
+  <!-- عرض النص الآمن بعد تطهيره -->
+  <div [innerHTML]="safeContent" class="safe"></div>
+</div>
