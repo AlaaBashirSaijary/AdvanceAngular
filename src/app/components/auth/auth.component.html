@@ -1,0 +1,21 @@
+<!-- auth.component.html -->
+<div *ngIf="user; else loggedOut">
+  <div class="user-info">
+    <h2>Welcome, {{ user.displayName }}!</h2>
+    <p>Email: {{ user.email }}</p>
+    <img
+      *ngIf="user.photoURL"
+      [src]="user.photoURL"
+      alt="User Photo"
+      class="user-photo"
+    />
+    <button (click)="logout()" class="btn btn-logout">Logout</button>
+  </div>
+</div>
+
+<ng-template #loggedOut>
+  <div class="login-prompt">
+    <p>You are not logged in.</p>
+    <button (click)="login()" class="btn btn-login">Login with Google</button>
+  </div>
+</ng-template>

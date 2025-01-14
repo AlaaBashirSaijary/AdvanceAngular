@@ -7,6 +7,9 @@ import { AsyncPipeComponent } from './components/async-pipe/async-pipe.component
 import { DomSanitizerHTMLComponent } from './components/dom-sanitizer-html/dom-sanitizer-html.component';
 import { DomSanitizerURLComponent } from './components/dom-sanitizer-url/dom-sanitizer-url.component';
 import { CustomValidatorComponent } from './components/custom-validator/custom-validator.component';
+import { ChangeDetectionDemoComponent } from './components/change-detection-demo/change-detection-demo.component';
+import { ChartComponent } from './components/chart/chart.component';
+import { AuthComponent } from './components/auth/auth.component';
 
 const routes: Routes = [
   { path: 'track-by', component: TrackByExpComponent },
@@ -15,7 +18,13 @@ const routes: Routes = [
   { path: 'async', component: AsyncPipeComponent },
   { path: 'Sanitize', component: DomSanitizerHTMLComponent },
   { path: 'URL', component: DomSanitizerURLComponent },
-  {path:'customValidator',component:CustomValidatorComponent}
+  {path:'customValidator',component:CustomValidatorComponent},
+  {path:'changeDetection',component:ChangeDetectionDemoComponent},
+  {path:'chart',component:ChartComponent},
+  {path:'auth',component:AuthComponent}
+
+
+
 
 ];
 

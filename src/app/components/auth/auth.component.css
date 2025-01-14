@@ -1,0 +1,38 @@
+.user-info {
+    text-align: center;
+    margin: 20px;
+  }
+
+  .user-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px 0;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .btn-login {
+    background-color: #4285f4;
+    color: #fff;
+  }
+
+  .btn-logout {
+    background-color: #db4437;
+    color: #fff;
+  }
+
+  .btn:hover {
+    opacity: 0.9;
+  }
+
+  .login-prompt {
+    text-align: center;
+    margin: 20px;
+  }
