@@ -35,6 +35,14 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireAuthModule } from '@angular/fire/compat/auth';
 import { AngularFirestoreModule } from '@angular/fire/compat/firestore';
 import { firebaseConfig } from '../environments/environment';
+import { SweetalertNotificationComponent } from './components/sweetalert-notification/sweetalert-notification.component';
+import { NgforcomponentComponent } from './components/ngforcomponent/ngforcomponent.component';
+import { CarouselcomponentComponent } from './components/carouselcomponent/carouselcomponent.component';
+import { NgbCarouselModule, NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { ChilldEmitterComponent } from './components/chilld-emitter/chilld-emitter.component';
+import { MainEmitterComponent } from './components/main-emitter/main-emitter.component';
+import { HeaderComponent } from './components/header/header.component';
+import { CustomPipe } from './custom.pipe';
 @NgModule({
   declarations: [
     AppComponent,
@@ -52,7 +60,14 @@ import { firebaseConfig } from '../environments/environment';
     CustomValidatorComponent,
     ChangeDetectionDemoComponent,
     ChartComponent,
-    AuthComponent
+    AuthComponent,
+    SweetalertNotificationComponent,
+    NgforcomponentComponent,
+    CarouselcomponentComponent,
+    ChilldEmitterComponent,
+    MainEmitterComponent,
+    HeaderComponent,
+    CustomPipe
   ],
   imports: [
     BrowserModule,
@@ -62,6 +77,8 @@ import { firebaseConfig } from '../environments/environment';
     AngularFireModule.initializeApp(firebaseConfig),
     AngularFireAuthModule, // For Authentication
     AngularFirestoreModule, // For Firestore Database
+    NgbCarouselModule ,
+    NgbModule
   ],
   providers: [
     provideClientHydration(),

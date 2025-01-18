@@ -10,6 +10,12 @@ import { CustomValidatorComponent } from './components/custom-validator/custom-v
 import { ChangeDetectionDemoComponent } from './components/change-detection-demo/change-detection-demo.component';
 import { ChartComponent } from './components/chart/chart.component';
 import { AuthComponent } from './components/auth/auth.component';
+import { SweetalertNotificationComponent } from './components/sweetalert-notification/sweetalert-notification.component';
+import { NgforcomponentComponent } from './components/ngforcomponent/ngforcomponent.component';
+import { CarouselcomponentComponent } from './components/carouselcomponent/carouselcomponent.component';
+import { MainEmitterComponent } from './components/main-emitter/main-emitter.component';
+import { ChilldEmitterComponent } from './components/chilld-emitter/chilld-emitter.component';
+import { HeaderComponent } from './components/header/header.component';
 
 const routes: Routes = [
   { path: 'track-by', component: TrackByExpComponent },
@@ -21,7 +27,15 @@ const routes: Routes = [
   {path:'customValidator',component:CustomValidatorComponent},
   {path:'changeDetection',component:ChangeDetectionDemoComponent},
   {path:'chart',component:ChartComponent},
-  {path:'auth',component:AuthComponent}
+  {path:'auth',component:AuthComponent},
+  {path:'sweet',component:SweetalertNotificationComponent},
+  {path:'Ngfor',component:NgforcomponentComponent},
+  {path:'Carousel',component:CarouselcomponentComponent},
+  {path:'MainEmitter',component:MainEmitterComponent},
+  {path:'header',component:HeaderComponent},
+
+
+
 
 
 
