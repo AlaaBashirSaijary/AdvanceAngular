@@ -1,0 +1,7 @@
+<h2>قائمة المنتجات</h2>
+<ul>
+  <li *ngFor="let product of products">
+    المنتج: <strong>{{ product.name }}</strong> -
+    السعر (مع الضريبة): <strong>{{ product.price | custom:15 }}$</strong>
+  </li>
+</ul>

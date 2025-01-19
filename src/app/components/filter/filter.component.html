@@ -1,0 +1,29 @@
+<div class="filter-container">
+  <!-- زر الفلتر -->
+
+    <fa-icon [icon]="'filter'" (click)="toggleFilters()"></fa-icon>
+
+  <!-- حقول الفلترة -->
+  <div *ngIf="showFilters" class="filter-fields">
+    <label>Category:</label>
+    <input [(ngModel)]="filters.category" placeholder="Enter category" />
+
+    <label>Min Price:</label>
+    <input [(ngModel)]="filters.price_min" type="number" placeholder="Min price" />
+
+    <label>Max Price:</label>
+    <input [(ngModel)]="filters.price_max" type="number" placeholder="Max price" />
+
+    <button class="apply-button" (click)="applyFilters()">Apply Filters</button>
+  </div>
+
+  <!-- قائمة المنتجات -->
+  <div *ngIf="products.length">
+    <h3>Filtered Products:</h3>
+    <ul class="product-list">
+      <li *ngFor="let product of products">
+        {{ product.name }} - ${{ product.price }}
+      </li>
+    </ul>
+  </div>
+</div>

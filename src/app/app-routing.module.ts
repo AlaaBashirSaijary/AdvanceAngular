@@ -16,9 +16,11 @@ import { CarouselcomponentComponent } from './components/carouselcomponent/carou
 import { MainEmitterComponent } from './components/main-emitter/main-emitter.component';
 import { ChilldEmitterComponent } from './components/chilld-emitter/chilld-emitter.component';
 import { HeaderComponent } from './components/header/header.component';
+import { PipessExampleComponent } from './components/pipess-example/pipess-example.component';
+import { FilterComponent } from './components/filter/filter.component';
 
 const routes: Routes = [
-  { path: 'track-by', component: TrackByExpComponent },
+  { path: 'track-by', component: TrackByExpComponent,title:'TrackBy' },
   { path: 'spinner', component: SpinnerComponent },
   { path: 'all', component: AllNgComponent },
   { path: 'async', component: AsyncPipeComponent },
@@ -32,7 +34,11 @@ const routes: Routes = [
   {path:'Ngfor',component:NgforcomponentComponent},
   {path:'Carousel',component:CarouselcomponentComponent},
   {path:'MainEmitter',component:MainEmitterComponent},
-  {path:'header',component:HeaderComponent},
+  {path:'header',component:HeaderComponent,title:'Header|AlaaSsaijary'},
+  {path:'pipe',component:PipessExampleComponent,title:'Pipe'},
+  {path:'filter',component:FilterComponent,title:'filter'},
+
+  { path: 'about', loadChildren: () => import('./pages/about/about.module').then(m => m.AboutModule) }
 
 
 

@@ -43,6 +43,10 @@ import { ChilldEmitterComponent } from './components/chilld-emitter/chilld-emitt
 import { MainEmitterComponent } from './components/main-emitter/main-emitter.component';
 import { HeaderComponent } from './components/header/header.component';
 import { CustomPipe } from './custom.pipe';
+import { PipessExampleComponent } from './components/pipess-example/pipess-example.component';
+import { FilterComponent } from './components/filter/filter.component';
+import { FaIconLibrary, FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { faFilter } from '@fortawesome/free-solid-svg-icons';
 @NgModule({
   declarations: [
     AppComponent,
@@ -67,7 +71,8 @@ import { CustomPipe } from './custom.pipe';
     ChilldEmitterComponent,
     MainEmitterComponent,
     HeaderComponent,
-    CustomPipe
+    FilterComponent,
+
   ],
   imports: [
     BrowserModule,
@@ -75,10 +80,11 @@ import { CustomPipe } from './custom.pipe';
     AppRoutingModule,
     FormsModule,
     AngularFireModule.initializeApp(firebaseConfig),
-    AngularFireAuthModule, // For Authentication
-    AngularFirestoreModule, // For Firestore Database
-    NgbCarouselModule ,
-    NgbModule
+    AngularFireAuthModule,
+    AngularFirestoreModule,
+    NgbCarouselModule,
+    NgbModule,FontAwesomeModule
+
   ],
   providers: [
     provideClientHydration(),
@@ -98,4 +104,8 @@ import { CustomPipe } from './custom.pipe';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+  constructor(library: FaIconLibrary){
+    library.addIcons(faFilter);
+  }
+}
